@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4</title>
+    <link rel="icon" href="Logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: orange; /* Text color */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Rotating Background */
+        @keyframes background-rotate {
+            0% {
+                background-image: url('pic2.jpeg'); /* First image */
+            }
+            50% {
+                background-image: url('pic3.jpeg'); /* Second image */
+            }
+            100% {
+                background-image: url('pic2.jpeg'); /* Loop back to first image */
+            }
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: background-rotate 15s infinite; /* Rotate every 15 seconds */
+            z-index: -1; /* Ensure background is behind content */
+        }
+
+        /* Content Section */
+        .content {
+            z-index: 2; /* Ensures text is on top of everything */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        /* Back Button Styling */
+        .back-button {
+            position: fixed;
+            bottom: 20px; /* Bottom left corner */
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white; /* Maintained original color */
+            background-color: rgba(0, 0, 0, 0.6); /* Maintained original background */
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Maintained hover effect */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Rotating Background -->
+    <div class="background"></div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>Welcome to S4</h1>
+        <p>This term S4 has been doing lots of shopping lately for cooking class! .</p>
+    </div>
+
+    <!-- Back Button -->
+    <a href="MAP.html" class="back-button">Back</a>
+</body>
+</html>

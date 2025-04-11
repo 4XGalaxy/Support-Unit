@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Hub</title>
+    <link rel="icon" href="Logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('jack.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Title Section */
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Content Links */
+        .link-container {
+            margin-top: 20px;
+        }
+
+        .link-container a {
+            display: inline-block;
+            margin: 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .link-container a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        /* Bottom Corner Buttons */
+        .corner-button {
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .corner-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .bottom-left {
+            left: 20px;
+        }
+
+        .above-next {
+            right: 20px;
+            bottom: 70px; /* Positioned above the "More" button */
+        }
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <div class="title">Welcome to the Portal Hub!</div>
+
+    <!-- Links -->
+    <div class="link-container">
+        <a href="s1.html">S1</a>
+        <a href="S2.html">S2</a>
+        <a href="S3.html">S3</a> <!-- Updated to point to S3.html -->
+        <a href="S4.html">S4</a>
+        <a href="S5.html">S5</a>
+        <a href="S6.html">S6</a>
+        <a href="S7.html">S7</a>
+        <a href="S8.html">S8</a>
+    </div>
+
+    <!-- Bottom Corner Buttons -->
+    <a href="Index.html" class="corner-button bottom-left">Back</a>
+    <a href="more.html" class="corner-button above-next">More</a>
+</body>
+</html>

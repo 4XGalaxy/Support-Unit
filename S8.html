@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Template</title>
+    <link rel="icon" href="Logo.png" type="image/png">
+    <style>
+        body {
+            background-image: url('sport.jpg'); /* Replace with your desired background */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+            position: relative;
+            color: white;
+        }
+
+        .display-text {
+            font-size: 2em;
+            margin: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: right;
+        }
+
+        .insert-text {
+            font-size: 1.5em;
+            margin: 20px;
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            text-align: right;
+        }
+
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+            transform: scale(1.1); /* Enlarge slightly on hover */
+        }
+
+        .back-button:active {
+            transform: scale(0.9); /* Slight shrink when clicked */
+        }
+    </style>
+</head>
+<body>
+    <!-- Dynamic content area -->
+    <div class="display-text">S8 has been doing a lot of Sport this term, and they have been playing some Hardcore Tennis!</div>
+    <div class="insert-text"></div>
+
+    <!-- Navigation -->
+    <button class="back-button" onclick="window.location.href='Map.html'">Back</button>
+</body>
+</html>

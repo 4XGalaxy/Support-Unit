@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Made This!</title>
+    <link rel="icon" href="Logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('SP.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* High Visibility Insert Text Box */
+        .text-box {
+            background-color: transparent;
+            text-align: center;
+            color: white; /* Bright and visible text */
+            font-size: 2em;
+            font-weight: bold;
+            padding: 40px; /* Doubled the padding to make the box 2x higher */
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for extra clarity */
+        }
+
+        .text-box-smaller {
+            background-color: transparent;
+            text-align: center;
+            color: white; /* Bright and visible text */
+            font-size: 1.5em; /* Slightly smaller font */
+            padding: 30px; /* Increased padding for height as well */
+            margin-top: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for extra clarity */
+        }
+
+        /* Back Button */
+        .corner-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .corner-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- High Visibility Text Box -->
+    <div class="text-box">Why I Made This!</div>
+
+    <!-- Smaller High Visibility Text Box -->
+    <div class="text-box-smaller">My name is Brock Brown. I am currently a Year 11 student at Glenmore Park High School. This website has been created to give new students a better understanding of the amazing things that happen in our unit. My aim is to show you why the support unit is so awesome and how it is filled with amazing students and teachers.</div>
+
+    <!-- Bottom Corner Back Button -->
+    <a href="Index.html" class="corner-button">Back</a>
+</body>
+</html>

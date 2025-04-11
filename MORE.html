@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE</title>
+    <link rel="icon" href="Logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('MORE.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Button Styling for Both Buttons */
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            box-shadow: 0 4px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .button:active {
+            transform: translateY(2px) scale(0.95);
+            box-shadow: 0 2px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Back Button Placement */
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Teachers Button -->
+    <a href="Teachers.html" class="button">Teachers</a>
+
+    <!-- Back Button -->
+    <a href="MAP.html" class="button back-button">Back</a>
+</body>
+</html>
